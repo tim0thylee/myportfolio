@@ -1,0 +1,19 @@
+{
+  "name": "timportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for posting projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tim0thylee/myportfolio.git"
+  },
+  "author": "Timothylee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tim0thylee/myportfolio/issues"
+  },
+  "homepage": "https://github.com/tim0thylee/myportfolio#readme"
+}
