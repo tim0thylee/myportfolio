@@ -20,6 +20,8 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static('public'))
+
 
 // ================================================================================
 // ROUTER
@@ -27,7 +29,9 @@ app.use(bodyParser.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routes.js")(app);
+app.get("/", function(req,res){
+  res.sendfile('index.html')
+})
 
 // =============================================================================
 // LISTENER
